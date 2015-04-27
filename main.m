@@ -77,13 +77,21 @@ prediction_video=[]
 prediction_audiovideo=[]
 ground_truth=[]
 words={'mango','chennai','lolapaluza','miscellaneous','richardson','entourage','bluethinman'}
-first_speaker_index=2
+first_speaker_index=1
 
 % there is a problem with i=1
 for j=first_speaker_index:3
     
     AL=[];
     VL=[];
+    
+      %% Load testing data of a speaker
+        
+        addpath('C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp');
+        src='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\';
+        destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\work_board\';
+        copy_test_speaker_data(src,destination,j)
+        
     
     % there is a problem with i=1
     for i=first_speaker_index:3
@@ -98,13 +106,7 @@ for j=first_speaker_index:3
         copy_trained_hmms(src,destination,i);
         
         
-        %% Load testing data of a speaker
-        
-        
-        src='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\';
-        destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\work_board\';
-        copy_test_speaker_data(src,destination,j)
-        
+      
         % Test with speakers
         restoredefaultpath
         cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'

@@ -45,15 +45,16 @@ CWORDSample=CWORD(bound_video_word(sample_index,1):bound_video_word(sample_index
 
 fword=CWORDSample';
 
-% % dynamic_features;
-% dyf=(diff(fword'))';
-% last=dyf(:,end);
-% fword=[fword;[dyf last]];
-% %end
+% dynamic_features;
+dyf=(diff(fword'))';
+last=dyf(:,end);
+fword=[fword;[dyf last]];
+%end
 
-
+% vector_length=size(mu1)
 % tokenNo=normalise(fyn(1:15,:))
-tokenNo=normalise(fword(1:20,:));
+feature_vector_length=40;
+tokenNo=normalise(fword(1:feature_vector_length,:));
 
 cd C:\Users\TheatroIT\Documents\MSP\Matlab\FullBNT-1.0.7\bnt;
 addpath(genpathKPM(pwd));

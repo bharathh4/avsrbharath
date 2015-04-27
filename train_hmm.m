@@ -60,21 +60,22 @@ addpath('C:\Users\TheatroIT\Documents\MSP\Matlab\rastamat');
 
 fword=CWORDSample';
 
-% % dynamic_features;
-% dyf=(diff(fword'))';
-% last=dyf(:,end);
-% fword=[fword;[dyf last]];
-% %end
+% dynamic_features;
+dyf=(diff(fword'))';
+last=dyf(:,end);
+fword=[fword;[dyf last]];
+%end
 
-obs1=normalise(fword(1:20,:));
+feature_vector_length=40;
+obs1=normalise(fword(1:feature_vector_length,:));
 
 
 
-O=20;
+O=feature_vector_length;
 T=size(obs1,2);
 nex=1;
 M=2;
-Q=3;
+Q=5;
 cov_type='full'
 data=obs1;
 prior0 = normalise(rand(Q,1));
@@ -123,7 +124,7 @@ obs1=normalise(fword(1:24,:));
 O=24;
 T=size(obs1,2);
 nex=1;
-M=3;
+M=2;
 Q=6;
 cov_type='full'
 data=obs1;
