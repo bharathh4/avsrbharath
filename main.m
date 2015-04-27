@@ -77,16 +77,16 @@ prediction_video=[]
 prediction_audiovideo=[]
 ground_truth=[]
 words={'mango','chennai','lolapaluza','miscellaneous','richardson','entourage','bluethinman'}
-first_speaker_index=1
+first_speaker_index=2
 
 % there is a problem with i=1
-for j=first_speaker_index:7
+for j=first_speaker_index:3
     
     AL=[];
     VL=[];
     
     % there is a problem with i=1
-    for i=first_speaker_index:7
+    for i=first_speaker_index:3
         
         
         addpath('C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp');

@@ -5,7 +5,7 @@ function train_hmm(speaker_directory,word,wavefile,videofile)
 filename=sprintf('%stranscription.txt',speaker_directory);
 
 % filename='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\s1\transcription.txt'
-audio_fs=16000;
+audio_fs=44000;
 video_fs=24;
 % word='dallas'
 [bound_audio_word,bound_video_word]=get_word_boundaries(word,filename,audio_fs,video_fs);

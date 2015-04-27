@@ -5,7 +5,7 @@ display('Testing')
 
 
 filename=sprintf('%stranscription.txt',speaker_directory);
-audio_fs=16000;
+audio_fs=44000;
 video_fs=24;
 % word='chennai'
 [bound_audio_word,bound_video_word]=get_word_boundaries(word,filename,audio_fs,video_fs)
