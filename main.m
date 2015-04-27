@@ -99,7 +99,7 @@ for j=first_speaker_index:7
     % there is a problem with i=1
     for i=first_speaker_index:7
 
-        %% Load trained hmm of each speaker
+        %% Load trained hmm of each speaker. Small change in comment
 %         all_speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\'
 %         audio_hmm_filename='\word_audio_hmm.mat';
 %         video_hmm_filename='\word_video_hmm.mat';
