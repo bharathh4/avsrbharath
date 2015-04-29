@@ -5,35 +5,45 @@ function transfer_to_face_recognizer()
 
 format long
 
-% % Traiin with one speaker
-restoredefaultpath
-cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
-speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s1\'
-destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s1\raw\'
-word='mango'
-wavfile='amdc.wav'
-videofile='amdc.mp4'
-transfer(speaker_directory,word,videofile,destination)
-% 
-% Traiin with second speaker
-restoredefaultpath
-cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
-speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s2\'
-destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s2\raw\'
-word='chennai'
-wavfile='amdc.wav'
-videofile='amdc.mp4'
-transfer(speaker_directory,word,videofile,destination)
+
+% restoredefaultpath
+% cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+% speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\s4\'
+% destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\test\s4\raw\'
+% word='lolapaluza'
+% wavfile='amdc.wav'
+% videofile='amdc.mp4'
+% transfer(speaker_directory,word,videofile,destination)
+
+% % % Traiin with one speaker
+% restoredefaultpath
+% cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+% speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s1\'
+% destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s1\raw\'
+% word='mango'
+% wavfile='amdc.wav'
+% videofile='amdc.mp4'
+% transfer(speaker_directory,word,videofile,destination)
+% % 
+% % Traiin with second speaker
+% restoredefaultpath
+% cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+% speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s2\'
+% destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s2\raw\'
+% word='chennai'
+% wavfile='amdc.wav'
+% videofile='amdc.mp4'
+% transfer(speaker_directory,word,videofile,destination)
 % 
 % Traiin with third speaker
-restoredefaultpath
-cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
-speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s3\'
-destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s3\raw\'
-word='lolapaluza'
-wavfile='amdc.wav'
-videofile='amdc.mp4'
-transfer(speaker_directory,word,videofile,destination)
+% restoredefaultpath
+% cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+% speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s3\'
+% destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s3\raw\'
+% word='lolapaluza'
+% wavfile='amdc.wav'
+% videofile='amdc.mp4'
+% transfer(speaker_directory,word,videofile,destination)
 % 
 % % Traiin with fourth speaker
 % restoredefaultpath
@@ -74,6 +84,64 @@ transfer(speaker_directory,word,videofile,destination)
 % wavfile='amdc.wav'
 % videofile='amdc.mp4'
 % transfer(speaker_directory,word,videofile,destination)
+
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\s9\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\test\s4\raw\'
+word='pasadena'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\s10\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\test\s5\raw\'
+word='seatlle'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\test\s11\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\test\s6\raw\'
+word='arizona'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s9\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s4\raw\'
+word='pasadena'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s10\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s5\raw\'
+word='seatile'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s11\'
+destination='C:\Users\TheatroIT\Documents\MSP\Matlab\Face recognizerVideo\train\s6\raw\'
+word='arizona'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+transfer(speaker_directory,word,videofile,destination)
+
+
+
 end
 
 

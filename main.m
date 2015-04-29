@@ -69,6 +69,62 @@ wavfile='amdc.wav'
 videofile='amdc.mp4'
 train_hmm(speaker_directory,word,wavfile,videofile)
 
+% Traiin with eighth speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='bluethinman'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
+% Traiin with seventh speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='bluethinman'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
+
+% Traiin with eigth speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='raunchy'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
+
+% Traiin with nineth speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='pasadena'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
+% Traiin with tenth speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='seattle'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
+% Traiin with eleventh speaker
+restoredefaultpath
+cd 'C:\Users\TheatroIT\Documents\MSP\Matlab\AudioVisualCrisp'
+speaker_directory='C:\Users\TheatroIT\Documents\MSP\Matlab\Speakers\train\s7\'
+word='arizona'
+wavfile='amdc.wav'
+videofile='amdc.mp4'
+train_hmm(speaker_directory,word,wavfile,videofile)
+
 AL=[]
 VL=[]
 
